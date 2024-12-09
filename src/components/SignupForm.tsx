@@ -29,7 +29,7 @@ const SignupForm: React.FC = () => {
         .required("Email is required"),
       password: Yup.string().min(6, "Password must be at least 6 characters").required("Password is required"),
     }),
-    onSubmit: (values) => {
+    onSubmit: () => {
       toast("Sign Up Successful!", {
         position: "top-center",
         autoClose: 2000,
